@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lobster&family=Zen+Tokyo+Zoo&family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Fugu Print</title>
+    <meta name="description" content="Decoramos Tus Ideas">
+    <meta name="author" content="Federico Ueno">
+</head>
+<body>
+    <div class="logoFugu">
+        <img src="imagenes/fugu.jpg" alt="logo Fugu">
+    </div>
+    <div class="containerButton">
+        <button id="add"><i class="fas fa-shopping-cart"></i></button>
+            <div id="cart" class="cart">
+                <h2 class="gracias">CARRITO VACIO</h2>
+            </div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#fugu">FUGU</a></li>
+                <li><a href="#contenedorRemeras">REMERAS</a></li>
+                <li><a href="#contenedorCuadros">CUADROS</a></li>
+                <li><a href="#contenedorTazas">TAZAS</a></li>
+                <li><a href="#contenedorFooter">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner d-flex">
+            <div class="carousel-item active d-flex">
+                <img src="imagenes/_DSC0266.JPG" class="d-block w-50" alt="...">
+                <img src="imagenes/_DSC0251.JPG" class="d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/_DSC0238.JPG" class="d-flex w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/_DSC0258.JPG" class="d-flex w-50" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev btn-warning" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn-warning" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="contenedorRemeras">
+        <div>
+            <h1>REMERAS</h1>
+            <button class="btn btn-warning boton" onclick="cargarFuguRemeras()">FUGU REME</button>
+        </div>    
+    </section> 
+    <section id="contenedorCuadros">
+        <div>
+            <h1>CUADROS</h1>
+            <button class="btn btn-warning boton" onclick="cargarFuguCuadros()">GALERIA DE CUADROS</button>
+        </div>    
+    </section>
+    <section id="contenedorTazas">
+        <div>
+            <h1>TAZAS</h1>
+            <button class="btn btn-warning boton" onclick="cargarFuguTazas()">CUPS</button>
+        </div>    
+    </section> 
+    <section id="fugu" class="contenedorFuguPrint">
+        <div class="fugu">
+            <strong>FUGU</strong>
+        </div>
+        <div class="print">
+            <strong>PRINT</strong>
+        </div>
+    </section>
+    <div class="contenedorFugu">
+        <div>
+            <img src="imagenes/_DSC0246.JPG" alt="imagen Fugu Background">
+        </div>
+        <div class="texto">
+            <strong><a id="fuguPrint">QUIENES SOMOS</a></strong>
+            <p id="fuguPrint2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et tempora, commodi, saepe voluptate architecto cum possimus esse quis expedita reiciendis! Dicta perspiciatis veritatis, consequuntur ipsam adipisci vitae ratione mollitia repellendus sunt magni, consequatur quo quod rem vero magnam velit nisi consectetur. Earum quas saepe nobis illo minima ex fuga ratione eaque cupiditate magnam. Quas itaque perferendis autem maiores odit! Nesciunt explicabo a reprehenderit corporis suscipit inventore rem ipsa, possimus earum optio dolores sit doloremque quasi provident voluptatum repudiandae aliquam itaque accusamus perferendis in nihil cum ratione dolore nostrum! Illum unde excepturi repellendus sit, impedit atque quibusdam ea odit totam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur et tempora, commodi, saepe voluptate architecto cum possimus esse quis expedita reiciendis! Dicta perspiciatis veritatis, consequuntur ipsam adipisci vitae ratione mollitia repellendus sunt magni, consequatur quo quod rem vero magnam velit nisi consectetur. Earum quas saepe nobis illo minima ex fuga ratione eaque cupiditate magnam. Quas itaque perferendis autem maiores odit! Nesciunt explicabo a reprehenderit corporis suscipit inventore rem ipsa, possimus earum optio dolores sit doloremque quasi provident voluptatum repudiandae?</p>
+        </div>
+    </div>
+    <section class="formularioCliente" id="formularioCliente">
+        <h1 class="titulo">Qué opinás de Nuestros Fugu Productos?</h1>
+            <div class="fuguComentario">
+                <div class="form">
+                <div class="columna">
+                    <label for="name">Nombre y Apellido</label>
+                    <input class="field" type="text" name="name" id="name" placeholder="nombre">
+                    <label for="mail">Mail</label>
+                    <input class="field" type="text" name="mail" id="mail" placeholder="mail">
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" id="comentario" cols="50" rows="5"></textarea>
+                    <button class="boton" onclick="cargarFuguCliente()">FUGU CLICKEÁ!!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contenedorFooter">
+            <div>
+                <nav>
+                    <ul class="footer__socials">   
+                        <li>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
